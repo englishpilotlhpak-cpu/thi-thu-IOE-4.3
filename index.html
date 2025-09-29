@@ -38,7 +38,7 @@
     <script type="text/babel">
         // All React components and data are bundled into this single script tag.
         
-        // --- DỮ LIỆU CÂU HỎI IOE LỚP 4 (ĐỀ SỐ 01 - 100 CÂU MỚI) ---
+        // --- DỮ LIỆU CÂU HỎI IOE LỚP 4 ---
         const questions = [
             // CÂU HỎI ĐIỀN TỪ (FILL-IN-THE-BLANK)
             {
@@ -203,11 +203,11 @@
                 mediaType: 'audio',
                 mediaSource: 'https://res.ioe.vn/edu/EOlympic/ExamData/Thi_cac_cap/2020-2021/Lop4/Captruong/nghe/D3_4.mp3',
                 audioContent: 'She has a lot of fun on Sunday.',
-                correctAnswer: 'UNDAY',
-                correctAnswer_vi: 'Chủ nhật (Sunday)',
+                correctAnswer: 'ATURDAY',
+                correctAnswer_vi: 'thứ bảy (Saturday)',
                 hint_vi: 'Tên một ngày trong tuần, thường là ngày cuối tuần. (5 ký tự)',
-                rationale_vi: 'Nội dung nghe được là "on Sunday" (vào Chủ nhật).',
-                rationale_en: 'The audio specifies the day as "Sunday".',
+                rationale_vi: 'Nội dung nghe được là "on Saturday" (vào thứ bảy).',
+                rationale_en: 'The audio specifies the day as "Saturday".',
             },
             {
                 type: 'multimedia',
@@ -506,16 +506,16 @@
                 mediaSource: 'https://res.ioe.vn/edu/EOlympic/ExamData/ImageExam/2018/1/3/636505709198154900_566X320.jpg',
                 imagePrompt: 'Picture of a family in a living room, with parents on a sofa and two children sitting on the floor with toys/books.',
                 options: [
-                    { text: 'A. His family is watching TV.', isCorrect: true }, // GIẢ ĐỊNH câu FALSE là A, vì họ đang chơi/đọc sách chứ không xem TV
+                    { text: 'A. His family is watching TV.', isCorrect: false }, 
                     { text: 'B. His parents are sitting on the sofa.', isCorrect: false },
-                    { text: 'C. His sister is holding a bowl of popcorn.', isCorrect: false }, // Giả định đúng, hoặc B, C, D đều đúng
+                    { text: 'C. His sister is holding a bowl of popcorn.', isCorrect: true }, 
                     { text: 'D. He is sitting next to his sister on the floor.', isCorrect: false }
                 ],
-                correctAnswer: 'A. His family is watching TV.',
-                correctAnswer_vi: 'Gia đình cậu ấy đang xem TV (Đây là câu sai - FALSE, vì họ đang đọc sách/chơi).',
+                correctAnswer: 'C. His sister is holding a bowl of popcorn.',
+                correctAnswer_vi: 'Chị gái của anh ây đang cầm một tô bỏng ngô (Đây là câu sai - FALSE, vì họ cô ấy không cầm gì cả).',
                 hint_vi: 'Quan sát các thành viên đang làm gì. Câu nào MÔ TẢ SAI hành động trong hình?',
-                rationale_vi: 'Thường thì trong bức ảnh này, gia đình đang đọc sách hoặc chơi, chứ không phải xem TV. Do đó, A là câu sai (FALSE).',
-                rationale_en: 'In this specific IOE image, the family is usually reading or playing, meaning the statement "watching TV" is false.',
+                rationale_vi: 'C là câu sai (FALSE).',
+                rationale_en: 'In this specific IOE image,the girl is lying on the sofa.',
             },
             {
                 type: 'mc',
@@ -692,16 +692,16 @@
                 mediaSource: 'https://res.ioe.vn/edu/EOlympic/ExamData/ImageExam/2013/11/21/635206445203200607_Audio.mp3',
                 audioContent: 'She is my sister.',
                 options: [
-                    { text: 'A. mother', isCorrect: false },
+                    { text: 'A. mother', isCorrect: true },
                     { text: 'B. teacher', isCorrect: false },
-                    { text: 'C. sister', isCorrect: true },
+                    { text: 'C. sister', isCorrect: false },
                     { text: 'D. father', isCorrect: false }
                 ],
                 correctAnswer: 'C. sister',
                 correctAnswer_vi: 'chị/em gái',
                 hint_vi: 'Nghe tên thành viên gia đình được nhắc đến.',
-                rationale_vi: 'Nội dung nghe được là "She is my sister".',
-                rationale_en: 'The audio confirms the relationship as "sister".',
+                rationale_vi: 'Nội dung nghe được là "She is my mother".',
+                rationale_en: 'The audio confirms the relationship as "mother".',
             },
             {
                 type: 'multimedia',
@@ -1037,7 +1037,7 @@
             {
                 type: 'rearrange',
                 question: '60. Sắp xếp các từ/cụm từ sau thành câu đúng:',
-                words: ['What', 'your', 'nationality is', 'grandfather?'],
+                words: ['What', 'is', 'your', 'grandfather\'s', 'nationality?'],
                 correctAnswer: 'What is your grandfather\'s nationality?',
                 correctAnswer_vi: 'Ông của bạn mang quốc tịch gì?',
                 hint_vi: 'Cấu trúc: What is + Subject + nationality?',
@@ -1067,7 +1067,7 @@
             {
                 type: 'rearrange',
                 question: '88. Sắp xếp các từ/cụm từ sau thành câu đúng:',
-                words: ['Is Sarah’s', 'of', 'birthday', 'October?', 'on the first'],
+                words: ['Is Sarah\'s', 'birthday', 'of October?', 'on the first'],
                 correctAnswer: 'Is Sarah\'s birthday on the first of October?',
                 correctAnswer_vi: 'Sinh nhật của Sarah có phải vào ngày 1 tháng 10 không?',
                 hint_vi: 'Câu hỏi Yes/No với "is". Cấu trúc ngày tháng: on the first of October.',
@@ -1077,8 +1077,8 @@
             {
                 type: 'rearrange',
                 question: '89. Sắp xếp các từ/cụm từ sau thành câu đúng:',
-                words: ['the amusement', 'Let’s', 'park.', 'go to'],
-                correctAnswer: 'Let’s go to the amusement park.',
+                words: ['the amusement', 'Let\'s', 'park.', 'go to'],
+                correctAnswer: 'Let\'s go to the amusement park.',
                 correctAnswer_vi: 'Chúng ta hãy đi đến công viên giải trí.',
                 hint_vi: 'Cấu trúc đề nghị: Let\'s go to + Place.',
                 rationale_vi: 'Cấu trúc đề nghị: Let’s go to the amusement park.',
@@ -1135,8 +1135,6 @@
                 rationale_en: 'Question structure: Where does + Subject + Base Verb?',
             },
         ];
-
-        // REMOVED TTS UTILITY FUNCTIONS AND PLAYAUDIO FUNCTION
         
         // --- Component: ProgressBar.tsx ---
         const ProgressBar = ({ percentage }) => {
@@ -1190,12 +1188,9 @@
             }`;
             
             const submittedAnswerDisplay = () => {
-                // Do not show submitted answer if it's correct for clarity, unless it's a fill-in-the-blank where the blank part might be useful
                 const isMediaFillIn = question.type === 'multimedia' && (!question.options || question.options.length === 0);
                 
                 if(isCorrect && question.type !== 'fill-in-the-blank' && !isMediaFillIn) return null;
-                
-                // For media fill-in that was answered (i.e., submitted), we always show what they typed if it was wrong.
                 
                 return (
                     <>
@@ -1217,7 +1212,7 @@
                 <div className={boxClasses}>
                     <p className="font-bold text-lg mb-2 text-blue-700">Giải thích (Rationale):</p>
                     <div className="text-gray-700">
-                        {submittedAnswerDisplay()}
+                        {!isCorrect && submittedAnswerDisplay()}
                         <strong>Đáp án đúng (Tiếng Anh):</strong> <span className="text-green-800">{question.correctAnswer}</span> <br />
                         
                         {question.correctAnswer_vi && (
@@ -1233,6 +1228,60 @@
                     </div>
                 </div>
             );
+        };
+
+        // --- Component: MediaRenderer.tsx ---
+        const MediaRenderer = ({ question, showMessage }) => {
+            if (!question.mediaType || !question.mediaSource) {
+                return null;
+            }
+
+            const mediaContainerClasses = "w-full p-4 bg-gray-100 rounded-xl mb-4 text-center border-2 border-dashed border-gray-300";
+
+            if (question.mediaType === 'image') {
+                return (
+                    <div className={mediaContainerClasses}>
+                        <p className="text-blue-600 font-bold mb-2">🖼️ Hình ảnh tham khảo</p>
+                        <img 
+                            src={question.mediaSource}
+                            alt={question.imagePrompt || 'Hình ảnh cho câu hỏi'} 
+                            className="w-full max-w-xs mx-auto rounded-lg shadow-md border-2 border-gray-300"
+                            crossOrigin="anonymous"
+                            referrerPolicy="no-referrer"
+                            onError={(e) => { 
+                                e.target.onerror = null; 
+                                e.target.src = `https://placehold.co/566x320/FF0000/FFFFFF?text=L%E1%BB%97I+T%E1%BA%A2I+%E1%BA%A2NH+(CORS)`; 
+                                showMessage('Lỗi tải ảnh: File media có thể đã bị chặn.', 'error');
+                            }}
+                        />
+                        <p className="text-xs text-gray-500 mt-2 break-all">Link gốc: {question.mediaSource}</p>
+                        {question.imagePrompt && <p className="text-sm text-blue-600 mt-2 font-medium">Gợi ý nội dung: {question.imagePrompt}</p>}
+                    </div>
+                );
+            }
+
+            if (question.mediaType === 'audio') {
+                return (
+                    <div className={mediaContainerClasses}>
+                        <p className="text-blue-600 font-bold mb-2">🔊 Nghe đoạn hội thoại</p>
+                        <audio 
+                            controls
+                            src={question.mediaSource}
+                            className="w-full max-w-sm mx-auto my-2"
+                            crossOrigin="anonymous"
+                            referrerPolicy="no-referrer"
+                            onError={() => {
+                                showMessage('Lỗi tải Audio: File media có thể đã bị chặn.', 'error');
+                            }}
+                        >
+                            <source src={question.mediaSource} type="audio/mp3" />
+                            Trình duyệt của bạn không hỗ trợ phần tử audio.
+                        </audio>
+                        <p className="text-xs text-gray-500 mt-2 break-all">Link gốc: {question.mediaSource}</p>
+                    </div>
+                );
+            }
+            return null;
         };
 
         // --- Component: FillInTheBlankQuestion.tsx ---
@@ -1254,17 +1303,15 @@
             };
             
             const questionTextParts = React.useMemo(() => {
-                const text = question.question.replace(/^\d+\.\s*/, ''); // Remove leading number
+                const text = question.question.replace(/^\d+\.\s*/, '');
                 const blankMarker = '____';
                 if (text.includes(blankMarker)) {
-                    // Splits the question into three parts: before blank, the blank itself, and after blank.
                     const parts = text.split(blankMarker);
                     return [parts[0], parts.slice(1).join(blankMarker)];
                 }
                 return [text, '']; 
             }, [question.question]);
             
-
             let inputClasses = 'inline-block mx-2 p-2 border-2 rounded-lg text-lg text-center shadow-sm transition duration-200 align-baseline w-48 font-mono';
             if (isAnswered) {
                 const isSubmissionCorrect = inputValue.trim().toLowerCase() === question.correctAnswer.toLowerCase();
@@ -1273,16 +1320,15 @@
                 inputClasses += ' border-gray-300 focus:border-blue-500';
             }
 
-            // Determine placeholder size based on correct answer length for better UX
             const placeholderLength = question.correctAnswer.length > 0 ? question.correctAnswer.length : 4;
             const inputWidthStyle = {
                 width: `${Math.max(8, placeholderLength * 1.5)}rem`, 
                 maxWidth: '100%',
             };
 
-
             return (
                 <div className="space-y-4">
+                    <MediaRenderer question={question} showMessage={showMessage} />
                     <div className="text-xl sm:text-2xl font-semibold mb-6 leading-relaxed text-center flex justify-center items-center flex-wrap">
                         <span>{questionIndex + 1}. </span>
                         {questionTextParts[0] && <span className="ml-1">{questionTextParts[0]}</span>}
@@ -1408,7 +1454,6 @@
         const RearrangeQuestion = ({ question, isAnswered, onSubmit, showMessage, questionIndex, isCorrect }) => {
             const [sentenceWords, setSentenceWords] = React.useState([]);
             
-            // Generate unique IDs and shuffle words on mount/question change
             const initialSourceWords = React.useMemo(() => {
                 return [...question.words]
                     .map((text, index) => ({ id: crypto.randomUUID(), text })) 
@@ -1418,7 +1463,6 @@
             const [sourceWords, setSourceWords] = React.useState(initialSourceWords);
 
             React.useEffect(() => {
-                // Reset on new question
                 setSourceWords(initialSourceWords);
                 setSentenceWords([]);
             }, [initialSourceWords]);
@@ -1430,7 +1474,6 @@
 
             const handleReturnWord = (word) => {
                 setSentenceWords(prev => prev.filter(w => w.id !== word.id));
-                // Add back to source, maintaining the original order based on the new random UUIDs.
                 setSourceWords(prev => [...prev, word].sort((a, b) => a.id.localeCompare(b.id)));
             };
 
@@ -1440,15 +1483,12 @@
                     return;
                 }
                 
-                // 1. Get submitted sentence, removing excess spaces and fixing punctuation spacing
                 const rawSubmitted = sentenceWords.map(w => w.text).join(' ');
                 const submitted = rawSubmitted.replace(/\s+([.,?!])/g, '$1').trim();
-                
-                // 2. Normalize correct answer for comparison
                 const correct = question.correctAnswer.replace(/\s+([.,?!])/g, '$1').trim();
                 
-                // 3. Normalization function: Remove punctuation, convert to lowercase, remove excess space
-                const normalize = (str) => str.replace(/[.,?!]/g, '').replace(/\s+/g, ' ').toLowerCase().trim();
+                // Normalization function to ignore punctuation differences (e.g., ’ vs ') and other marks.
+                const normalize = (str) => str.replace(/[.,?!'’`–-]/g, '').replace(/\s+/g, ' ').toLowerCase().trim();
                 
                 const isCorrectResult = normalize(submitted) === normalize(correct);
                 onSubmit(submitted, isCorrectResult);
@@ -1461,7 +1501,6 @@
                         dangerouslySetInnerHTML={{ __html: `${questionIndex + 1}. ${question.question.replace(/^\d+\.\s*/, '')}` }}
                     />
                     <div className="space-y-4">
-                        {/* Target Sentence Area */}
                         <div className={`min-h-[60px] p-3 border-2 rounded-xl shadow-inner flex flex-wrap gap-2 items-center transition duration-300 ${isAnswered ? (isCorrect ? 'border-green-500 bg-green-50' : 'border-red-500 bg-red-50') : 'border-blue-300 bg-blue-50 border-dashed'}`}>
                             {sentenceWords.length === 0 && !isAnswered ? (
                                 <span className="text-gray-500 italic text-sm">Chạm vào các từ bên dưới để xây dựng câu trả lời...</span>
@@ -1472,7 +1511,6 @@
                             )}
                         </div>
                         
-                        {/* Source Word Bank */}
                         <div className="min-h-[100px] p-4 bg-gray-100 rounded-xl shadow-md flex flex-wrap gap-2 items-center border border-gray-200">
                             {sourceWords.length === 0 && !isAnswered ? (
                                 <span className="text-gray-500 italic text-sm">Đã dùng hết từ. Hãy kiểm tra câu trả lời!</span>
@@ -1494,8 +1532,8 @@
             );
         };
         
-        // --- NEW Component: FillInMediaQuestion.tsx (For audio/image fill-in) ---
-        const FillInMediaQuestion = ({ question, isAnswered, onSubmit, showMessage, questionIndex }) => {
+        // --- Component: MediaFillInQuestion.tsx (For audio/image fill-in) ---
+        const MediaFillInQuestion = ({ question, isAnswered, onSubmit, showMessage, questionIndex }) => {
             const [inputValue, setInputValue] = React.useState('');
 
             React.useEffect(() => {
@@ -1511,49 +1549,39 @@
                 const isCorrect = trimmedInput.toLowerCase() === question.correctAnswer.toLowerCase();
                 onSubmit(trimmedInput, isCorrect);
             };
-
-            const isCorrectSubmission = isAnswered && inputValue.trim().toLowerCase() === question.correctAnswer.toLowerCase();
+            
+            const questionTextParts = React.useMemo(() => {
+                const text = question.question.replace(/^\d+\.\s*/, '');
+                const blankMarker = '____';
+                if (text.includes(blankMarker)) {
+                    const parts = text.split(blankMarker);
+                    return [parts[0], parts.slice(1).join(blankMarker)];
+                }
+                return [text, '']; 
+            }, [question.question]);
+            
 
             let inputClasses = 'inline-block mx-2 p-2 border-2 rounded-lg text-lg text-center shadow-sm transition duration-200 align-baseline w-48 font-mono';
             if (isAnswered) {
-                inputClasses += isCorrectSubmission ? ' border-green-500 bg-green-50 font-bold' : ' border-red-500 bg-red-50 font-bold';
+                const isSubmissionCorrect = inputValue.trim().toLowerCase() === question.correctAnswer.toLowerCase();
+                inputClasses += isSubmissionCorrect ? ' border-green-500 bg-green-50 font-bold' : ' border-red-500 bg-red-50 font-bold';
             } else {
                 inputClasses += ' border-gray-300 focus:border-blue-500';
             }
-            
+
             const placeholderLength = question.correctAnswer.length > 0 ? question.correctAnswer.length : 4;
             const inputWidthStyle = {
                 width: `${Math.max(8, placeholderLength * 1.5)}rem`, 
                 maxWidth: '100%',
             };
 
-
             return (
                 <div className="space-y-4">
-                    <div className="w-full p-4 bg-gray-100 rounded-xl mb-4 text-center border-2 border-dashed border-gray-300">
-                        <p className="text-blue-600 font-bold mb-2">🔊 Câu hỏi Nghe & Điền từ (Bấm Play)</p>
-                        <audio 
-                            controls
-                            src={question.mediaSource}
-                            className="w-full max-w-sm mx-auto my-2"
-                            crossOrigin="anonymous"
-                            referrerPolicy="no-referrer"
-                            onError={() => {
-                                showMessage('Lỗi tải Audio: File media bị chặn (CORS).', 'error');
-                            }}
-                        >
-                            <source src={question.mediaSource} type="audio/mp3" />
-                            Trình duyệt của bạn không hỗ trợ phần tử audio.
-                        </audio>
-                        
-                        <p className="text-sm text-gray-700 mt-2">Nội dung câu hỏi: **{question.question.replace(/^\d+\.\s*/, '')}**</p>
-                        <p className="text-xs text-gray-500 mt-2 break-all">Link gốc: {question.mediaSource}</p>
-                    </div>
-
+                    <MediaRenderer question={question} showMessage={showMessage} />
+                    
                     <div className="text-xl sm:text-2xl font-semibold mb-6 leading-relaxed text-center flex justify-center items-center flex-wrap">
                         <span>{questionIndex + 1}. </span>
-                        {/* Split the question text to place the input */}
-                        <span className="ml-1">{question.question.replace(/^\d+\.\s*/, '').replace('____', '')}</span>
+                        {questionTextParts[0] && <span className="ml-1">{questionTextParts[0]}</span>}
                         <input
                             type="text"
                             value={inputValue}
@@ -1565,6 +1593,7 @@
                             onKeyPress={(e) => e.key === 'Enter' && !isAnswered && handleSubmitClick()}
                             aria-label="Fill in the blank"
                         />
+                        {questionTextParts[1] && <span>{questionTextParts[1]}</span>}
                     </div>
 
                     <button
@@ -1576,145 +1605,91 @@
                     </button>
                 </div>
             );
-        }
+        };
         
-        // --- Component: MultimediaQuestion.tsx (Updated for separating fill-in) ---
+        // --- Component: MultimediaQuestion.tsx (Updated for all media types) ---
         const MultimediaQuestion = ({ question, isAnswered, onSubmit, showMessage, questionIndex }) => {
-            
+            const isMultipleChoice = question.options && Array.isArray(question.options) && question.options.length > 0;
+
+            if (!isMultipleChoice) {
+                return <MediaFillInQuestion 
+                            question={question} 
+                            isAnswered={isAnswered} 
+                            onSubmit={onSubmit} 
+                            showMessage={showMessage} 
+                            questionIndex={questionIndex} 
+                        />;
+            }
+
             const [selectedIndex, setSelectedIndex] = React.useState(null);
 
             React.useEffect(() => {
                 setSelectedIndex(null);
             }, [question]);
-            
-            const isMultipleChoice = question.options && Array.isArray(question.options) && question.options.length > 0;
-            
-            // If it's audio and not MC, delegate to FillInMediaQuestion
-            if (question.mediaType === 'audio' && !isMultipleChoice) {
-                // Audio fill-in is handled by a specialized component.
-                const fillInQuestion = question.question.includes('____') ? question : {...question, question: question.question.replace('____', '') + ' ____'};
-                return <FillInMediaQuestion question={fillInQuestion} isAnswered={isAnswered} onSubmit={onSubmit} showMessage={showMessage} questionIndex={questionIndex} />;
-            }
-            
-            // Handle Image MC questions
+
             const handleSubmitClick = () => {
-                if (isMultipleChoice) {
-                    if (selectedIndex === null) {
-                        showMessage('Vui lòng chọn một đáp án trước khi kiểm tra!', 'info');
-                        return;
-                    }
-                    const selectedOption = question.options[selectedIndex];
-                    onSubmit(selectedOption.text, selectedOption.isCorrect);
+                if (selectedIndex === null) {
+                    showMessage('Vui lòng chọn một đáp án trước khi kiểm tra!', 'info');
+                    return;
                 }
+                const selectedOption = question.options[selectedIndex];
+                onSubmit(selectedOption.text, selectedOption.isCorrect);
             };
-
-            const renderMedia = () => {
-                if (question.mediaType === 'image') {
-                    return (
-                        <div className="w-full p-4 bg-gray-100 rounded-xl mb-4 text-center border-2 border-dashed border-gray-300">
-                            <p className="text-blue-600 font-bold mb-2">🖼️ Câu hỏi kèm Hình ảnh (Thử tải trực tiếp)</p>
-                            <img 
-                                src={question.mediaSource}
-                                alt={`Hình ảnh IOE: ${question.imagePrompt || 'Chủ đề động vật/toán học'}`} 
-                                className="w-full max-w-xs mx-auto rounded-lg shadow-md border-2 border-gray-300"
-                                // Attempt to circumvent restrictions
-                                crossOrigin="anonymous"
-                                referrerPolicy="no-referrer"
-                                // Fallback to placeholder if loading fails (likely due to CORS)
-                                onError={(e) => { 
-                                    e.target.onerror = null; 
-                                    e.target.src = `https://placehold.co/566x320/FF0000/FFFFFF?text=L%E1%BB%97I+T%E1%BA%A2I+%E1%BA%A2NH+(B%E1%BA%A3o+m%E1%BA%ADt+Tr%C3%ACnh+Duy%E1%BB%87t)`; 
-                                    showMessage('Lỗi tải ảnh: File media bị chặn do chính sách bảo mật trình duyệt (CORS).', 'error');
-                                }}
-                            />
-                            <p className="text-xs text-gray-500 mt-2 break-all">Link gốc: {question.mediaSource}</p>
-                            {question.imagePrompt && <p className="text-sm text-blue-600 mt-2 font-medium">Gợi ý nội dung: {question.imagePrompt}</p>}
-                        </div>
-                    );
-                }
-                
-                // This block handles Image-MC or Audio-MC (which we don't have yet but is possible)
-                if (question.mediaType === 'audio' && isMultipleChoice) {
-                    return (
-                        <div className="w-full p-4 bg-gray-100 rounded-xl mb-4 text-center border-2 border-dashed border-gray-300">
-                            <p className="text-blue-600 font-bold mb-2">🔊 Câu hỏi Nghe (Trắc nghiệm)</p>
-                            <audio 
-                                controls
-                                src={question.mediaSource}
-                                className="w-full max-w-sm mx-auto my-2"
-                                crossOrigin="anonymous"
-                                referrerPolicy="no-referrer"
-                                onError={() => {
-                                    showMessage('Lỗi tải Audio: File media bị chặn (CORS).', 'error');
-                                }}
-                            >
-                                <source src={question.mediaSource} type="audio/mp3" />
-                                Trình duyệt của bạn không hỗ trợ phần tử audio.
-                            </audio>
-                            <p className="text-xs text-gray-500 mt-2 break-all">Link gốc: {question.mediaSource}</p>
-                        </div>
-                    );
-                }
-
-                return null;
-            }
 
             return (
                 <>
-                    {renderMedia()}
+                    <MediaRenderer question={question} showMessage={showMessage} />
                     <h3
                         className="text-xl sm:text-2xl font-semibold mb-6 leading-relaxed"
                         dangerouslySetInnerHTML={{ __html: `${questionIndex + 1}. ${question.question.replace(/^\d+\.\s*/, '')}` }}
                     />
                     
                     <div className="space-y-4">
-                        {isMultipleChoice && (
-                            <div className="space-y-3">
-                                {question.options.map((option, index) => {
-                                    const isSelected = selectedIndex === index;
-                                    let labelClasses = "block p-4 border-2 rounded-xl shadow-md text-lg transition duration-200";
+                        <div className="space-y-3">
+                            {question.options.map((option, index) => {
+                                const isSelected = selectedIndex === index;
+                                let labelClasses = "block p-4 border-2 rounded-xl shadow-md text-lg transition duration-200";
 
-                                    if (isAnswered) {
-                                        labelClasses += " cursor-default";
-                                        if (option.isCorrect) {
-                                            labelClasses += " bg-green-100 border-green-500 font-bold";
-                                        } else if (isSelected) {
-                                            labelClasses += " bg-red-100 border-red-500 font-bold";
-                                        } else {
-                                            labelClasses += " border-gray-200 opacity-60";
-                                        }
+                                if (isAnswered) {
+                                    labelClasses += " cursor-default";
+                                    if (option.isCorrect) {
+                                        labelClasses += " bg-green-100 border-green-500 font-bold";
+                                    } else if (isSelected) {
+                                        labelClasses += " bg-red-100 border-red-500 font-bold";
                                     } else {
-                                        labelClasses += " cursor-pointer hover:bg-blue-50 hover:border-blue-300";
-                                        if(isSelected) {
-                                            labelClasses += " bg-blue-100 border-blue-500";
-                                        } else {
-                                            labelClasses += " border-gray-200";
-                                        }
+                                        labelClasses += " border-gray-200 opacity-60";
                                     }
+                                } else {
+                                    labelClasses += " cursor-pointer hover:bg-blue-50 hover:border-blue-300";
+                                    if(isSelected) {
+                                        labelClasses += " bg-blue-100 border-blue-500";
+                                    } else {
+                                        labelClasses += " border-gray-200";
+                                    }
+                                }
 
-                                    return (
-                                        <div key={index} className="relative">
-                                            <input
-                                                type="radio"
-                                                id={`option-${questionIndex}-${index}`}
-                                                name={`mc-option-${questionIndex}`}
-                                                value={index}
-                                                className="hidden"
-                                                checked={isSelected}
-                                                onChange={() => setSelectedIndex(index)}
-                                                disabled={isAnswered}
-                                            />
-                                            <label htmlFor={`option-${questionIndex}-${index}`} className={labelClasses}>
-                                                {option.text}
-                                            </label>
-                                        </div>
-                                    );
-                                })}
-                            </div>
-                        )}
+                                return (
+                                    <div key={index} className="relative">
+                                        <input
+                                            type="radio"
+                                            id={`option-${questionIndex}-${index}`}
+                                            name={`mc-option-${questionIndex}`}
+                                            value={index}
+                                            className="hidden"
+                                            checked={isSelected}
+                                            onChange={() => setSelectedIndex(index)}
+                                            disabled={isAnswered}
+                                        />
+                                        <label htmlFor={`option-${questionIndex}-${index}`} className={labelClasses}>
+                                            {option.text}
+                                        </label>
+                                    </div>
+                                );
+                            })}
+                        </div>
                         <button
                             onClick={handleSubmitClick}
-                            disabled={isAnswered || (isMultipleChoice && selectedIndex === null)}
+                            disabled={isAnswered}
                             className="w-full py-2 px-4 bg-green-600 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:bg-green-700 mt-4 disabled:bg-gray-400 disabled:cursor-not-allowed active:scale-98"
                         >
                             Kiểm Tra Câu Trả Lời
@@ -1723,7 +1698,6 @@
                 </>
             );
         };
-
         
         // --- Component: StartScreen.tsx ---
         const StartScreen = ({ onStart }) => {
@@ -1807,10 +1781,9 @@
             const [isCorrect, setIsCorrect] = React.useState(false);
             const [submittedAnswer, setSubmittedAnswer] = React.useState('');
             const [isHintVisible, setIsHintVisible] = React.useState(false);
-            const [message, setMessage] = React.useState(null); // message is object: {text: string, type: string}
+            const [message, setMessage] = React.useState(null);
 
             React.useEffect(() => {
-                // Initial shuffle
                 const array = [...questions];
                 for (let i = array.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
@@ -1822,7 +1795,6 @@
             const currentQuestion = shuffledQuestions[currentQuestionIndex];
 
             React.useEffect(() => {
-                // Reset state for the new question
                 setIsAnswered(false);
                 setScoredThisQuestion(false);
                 setIsCorrect(false);
@@ -1846,8 +1818,6 @@
                     setScore(prev => prev + 10);
                     setScoredThisQuestion(true);
                     showMessage('CHÍNH XÁC! +10 điểm. Tuyệt vời!', 'success');
-                } else if (isAnswerCorrect && scoredThisQuestion) {
-                    showMessage('CHÍNH XÁC! Nhưng điểm đã được tính rồi.', 'info');
                 } else {
                     showMessage('SAI RỒI! Vui lòng xem giải thích và học hỏi.', 'error');
                 }
@@ -1884,13 +1854,12 @@
                         return <MultipleChoiceQuestion {...commonProps} />;
                     case 'fill-in-the-blank':
                         return <FillInTheBlankQuestion {...commonProps} />;
-                    case 'multimedia': // NEW TYPE
+                    case 'multimedia':
                         return <MultimediaQuestion {...commonProps} />;
                     default:
                         return <div className="text-red-500">Lỗi: Loại câu hỏi không xác định.</div>;
                 }
             };
-
 
             return (
                 <div className="fade-in">
@@ -1912,7 +1881,6 @@
                     </div>
 
                     <div className="mt-8 border-t pt-6 flex justify-between items-center flex-wrap">
-                        {/* Hint Button and Box */}
                         <div className="relative inline-block my-2">
                             <button
                                 className="bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 hover:bg-yellow-600 active:scale-95"
@@ -1930,7 +1898,6 @@
                             </div>
                         </div>
                         
-                        {/* Next Button is placed outside the Hint block */}
                         <button onClick={handleNext} disabled={!isAnswered} className="flex-grow ml-4 py-3 px-4 bg-blue-500 text-white font-bold rounded-xl shadow-xl transition duration-300 hover:bg-blue-600 my-2 disabled:bg-gray-400 disabled:cursor-not-allowed active:scale-98">
                             {currentQuestionIndex === shuffledQuestions.length - 1 ? 'Hoàn thành' : 'Câu tiếp theo »'}
                         </button>
